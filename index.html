@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Train Booking</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="nav">
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/register_page">Register</a>
+        </div>
+        <h1>Train Booking System</h1>
+
+        <h2>Available Trains</h2>
+        <button onclick="loadTrains()">Load Trains</button>
+        <ul id="trainList"></ul>
+
+        <h2>Your Tickets</h2>
+        <button onclick="getTickets()">View Tickets</button>
+        <button onclick="logoutUser()">Logout</button>
+        <ul id="ticketList"></ul>
+
+        <script src="{{url_for('static', filename='script.js')}}"></script>
+    </body>
+</html>
